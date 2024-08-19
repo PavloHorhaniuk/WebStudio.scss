@@ -282,49 +282,52 @@ body {
   background: var(--color-blue);
 }
 
-.flex-header {
-  display: flex;
-  align-items: center;
-}
-
 .header {
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
   margin: 0 auto;
   height: 80px;
   /* padding-top: 16px; */
   /* padding-bottom: 16px; */
   max-width: 100%;
 }
+
 .header-span__logo {
   display: flex;
   align-items: center;
+  color: var(--color-blue);
+  font-family: var(--second-family);
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  color: #2196F3;
 }
+
 .header__logo {
   display: flex;
   align-items: center;
+  font-family: var(--second-family);
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
   margin-right: 93px;
-  color: #000;
+  color: var(--color-dark);
 }
+
 .header__nav {
   display: flex;
   height: 80px;
   margin-right: 218px;
 }
-.header__nav .nav-list {
+
+.nav-list {
   width: 281px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
-.header__nav .nav-list__link {
+
+.nav-list__link {
   position: relative;
+  font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -332,13 +335,13 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 100ms;
-  color: #212121;
+  color: var(--brand-color);
 }
 
 .nav-list__link::after {
   position: absolute;
   content: "";
-  bottom: -185%;
+  bottom: -180%;
   left: 0;
   width: 100%;
   height: 2px;
@@ -357,6 +360,15 @@ body {
   color: #2196F3;
 }
 
+.nav-list__link.nav-list__link--active {
+  color: #2196f3;
+}
+
+.nav-list__link.nav-list__link--active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .header-list {
   display: flex;
   align-items: center;
@@ -367,6 +379,7 @@ body {
 }
 
 .header-list__link {
+  font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -376,14 +389,14 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 100ms;
-  fill: #757575;
+  fill: var(--color-gray);
   gap: 10px;
-  color: #757575;
+  color: var(--color-gray);
 }
 
 .header-list__item:hover .header-list__link {
-  color: #2196F3;
-  fill: #2196F3;
+  color: var(--color-hover);
+  fill: var(--color-hover);
 }
 
 .hero {
