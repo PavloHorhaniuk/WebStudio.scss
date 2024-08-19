@@ -1,0 +1,50 @@
+.section-customers {
+    padding-top: 90px;
+    padding-bottom: 94px;
+}
+
+.section-customers-list {
+    display: flex;
+}
+
+.customers__title {
+    // font-family: getFont('font-family');
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: getColor('brand');
+    margin-bottom: 50px;
+}
+
+.customers-list__item {
+    @include flex_JScenAIcen;
+    width: 170px;
+    height: 92px;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 5px;
+}
+
+.customers-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customers-list__link {
+    @include flex_JScenAIcen;
+    fill: #AFB1B8;
+    width: 106px;
+    height: 60px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 150ms;
+}
+
+.customers-list__item:hover .customers-list__link {
+    fill: getColor('hover');
+}
+
+.customers-list__item:hover {
+    border: 1px solid getColor('hover');
+}
