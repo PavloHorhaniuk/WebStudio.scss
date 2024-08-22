@@ -49,7 +49,7 @@
 
     &__nav {
         display: flex;
-        // height: 80px;
+        height: 80px;
         margin-right: 218px;
 
         .nav-list {
@@ -164,6 +164,7 @@
 
     &__nav{
         @media screen and (min-width: getBreakPoint('tablet')) {
+            display: flex;
             height: 80px;
         }
     }
@@ -290,45 +291,45 @@
 
 // ===============================================
 
-.header {
-    @media screen and (min-width: getBreakPoint('mobile')) {
-        height: 60px;
-        display: flex;
-        text-align: center;
-        align-items: center;
-    }
+// .header {
+//     @media screen and (min-width: getBreakPoint('mobile')) {
+//         height: 60px;
+//         display: flex;
+//         text-align: center;
+//         align-items: center;
+//     }
 
-    .button-menu-toggle {
-        @media screen and (min-width: getBreakPoint('tablet')) {
-            display: none;
-        }
-    }
+//     .button-menu-toggle {
+//         @media screen and (min-width: getBreakPoint('tablet')) {
+//             display: none;
+//         }
+//     }
 
-    &__logo {
-        @media screen and (min-width: getBreakPoint('mobile')) {
-            // margin-right: 276px;
-        }
-    }
+//     &__logo {
+//         @media screen and (min-width: getBreakPoint('mobile')) {
+//             // margin-right: 276px;
+//         }
+//     }
 
-    .nav-list {
-        display: none;
+//     .nav-list {
+//         display: none;
 
-        @media screen and (min-width: getBreakPoint('tablet')) {
-            display: flex;
-        }
+//         @media screen and (min-width: getBreakPoint('tablet')) {
+//             display: flex;
+//         }
 
-        //* Від 1200px
-        @media screen and (min-width: getBreakPoint('desktop')) {}
-    }
+//         //* Від 1200px
+//         @media screen and (min-width: getBreakPoint('desktop')) {}
+//     }
 
-    .header-list {
-        display: none;
+//     .header-list {
+//         display: none;
 
-        @media screen and (min-width: getBreakPoint('tablet')) {
-            display: flex;
-        }
+//         @media screen and (min-width: getBreakPoint('tablet')) {
+//             display: flex;
+//         }
 
-        // * Від 1200px
-        @media screen and (min-width: getBreakPoint('desktop')) {}
-    }
-}
+//         // * Від 1200px
+//         @media screen and (min-width: getBreakPoint('desktop')) {}
+//     }
+// }
