@@ -1,24 +1,67 @@
+// .conteiner {
+//     width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+// }
+
 .conteiner {
-    width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    min-width: 320px;
     padding: 0 15px;
+    margin: 0 auto;
+    outline:  solid 1px red;
+
+    @media screen and (min-width: getBreakPoint('mobile')) {
+        max-width: getBreakPoint('mobile');
+        // width: 480px;
+    }
+    
+    @media screen and (min-width: getBreakPoint('tablet')) {
+        max-width: getBreakPoint('tablet');
+        // width: 768px;
+    }
+    
+    @media screen and (min-width: getBreakPoint('desktop')) {
+        max-width: getBreakPoint('desktop');
+        // width: 1200px;
+    }
 }
 
-// .conteiner {
-//     width: 100%;
-//     min-width: 320px;
-//     padding: 0 30px;
-//     margin: 0 auto;
+.flex-header{
+    height: 60px;
+    // @media screen and (min-width: getBreakPoint('tablet')) {
+    //     max-width: getBreakPoint('tablet');
 
-//     @media screen and (min-width: getBraik-Points('mobile')) {
-//         max-width: getBraik-Points('mobile');
+    //     height: 80px;
+    // }
+}
+
+//     @media screen and (min-width: getBreakPoints('mobile')) {
+//         max-width: getBreakPoints('mobile');
 //     }
 
-//     @media screen and (min-width: getBraik-Points('tabel')) {
-//         max-width: getBraik-Points('tabel');
+//     @media screen and (min-width: getBreakPoints('tabel')) {
+//         max-width: getBreakPoints('tabel');
 //     }
 
-//     @media screen and (min-width: getBraik-Points('desktop')) {
-//         max-width: getBraik-Points('desktop');
+//     @media screen and (min-width: getBreakPoints('desktop')) {
+//         max-width: getBreakPoints('desktop');
 //     }
 // }
+
+//! Медіа-запити
+        //? var-03.map-get --> getBreakPoint
+        // @media screen and (min-width: getBreakPoint('mobile')) {
+        //     max-width: getBreakPoint('mobile');
+        //     // width: 480px;
+        // }
+        
+        // @media screen and (min-width: getBreakPoint('tablet')) {
+        //     max-width: getBreakPoint('tablet');
+        //     // width: 768px;
+        // }
+        
+        // @media screen and (min-width: getBreakPoint('desktop')) {
+        //     max-width: getBreakPoint('desktop');
+        //     // width: 1200px;
+        // }

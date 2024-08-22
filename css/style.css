@@ -33,7 +33,7 @@ body {
 .header {
     background-color: var(--color-white);
     margin: 0 auto;
-    height: 80px;
+    /* height: 80px; */
     /* padding-top: 16px; */
     /* padding-bottom: 16px; */
     max-width: 100%;

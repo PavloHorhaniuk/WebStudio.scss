@@ -33,3 +33,21 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+// @mixin buttons-menu-toggle (
+//     //* До 767px
+//     min-height: 40px;
+//     min-width: 40px;
+//     margin-left: auto;
+//     padding: 0;
+//     @include flex_JCcen-AIcen;
+//     cursor: pointer;
+//     border: none;
+//     border-radius: 50%;
+//     outline: none;
+//     background-color: transparent;
+    
+//     &:hover,
+//     &:focus {
+//         background-color: rgba(0, 0, 0, 0.1);
+//     )
