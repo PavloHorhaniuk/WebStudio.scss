@@ -6,12 +6,13 @@
     // min-width: 320px;
     background-color: getColor('color-white');
     margin: 0 auto;
-    // height: 80px;
+    // height: 60px;
     // padding-top: 16px;
     // padding-bottom: 16px;
     max-width: 100%;
 
     .button-menu-toggle {
+        margin-left: 276px;
         min-height: 40px;
         min-width: 40px;
         margin-left: auto;
@@ -25,9 +26,6 @@
         border: none;
         outline: none;
         background-color: transparent;
-        // @media screen and (min-width: getBreakPoint('tablet')) {
-        //     display: none;
-        // }
     }
 
     &-span__logo {
@@ -45,7 +43,7 @@
         font-weight: 700;
         font-size: 26px;
         letter-spacing: 0.03em;
-        margin-right: 93px;
+        // margin-right: 93px;
         color: getColor('color-dark');
     }
 
@@ -145,6 +143,9 @@
         text-align: center;
         align-items: center;
     }
+    @media screen and (min-width: getBreakPoint('tablet')) {
+        height: 80px;
+    }
 
     .button-menu-toggle {
         @media screen and (min-width: getBreakPoint('tablet')) {
@@ -155,6 +156,9 @@
     &__logo {
         @media screen and (min-width: getBreakPoint('mobile')) {
             margin-right: 276px;
+        }
+        @media screen and (min-width: getBreakPoint('desktop')) {
+            margin-right: 93px;
         }
     }
 

@@ -1,14 +1,16 @@
 .section-img {
+    display: none;
+
+    @media screen and (min-width: getBreakPoint('desktop')) {
+        display: block;
+    }
+
     padding-top: 94px;
     padding-bottom: 94px;
-    display: none;
     min-width: 1199px;
-    @media screen and (min-width: getBreakPoint('desktop')) {
-        max-width: getBreakPoint('desktop');
-        display: visible;
-        // width: 1200px;
-    }
+    // width: 1200px;
 }
+
 
 .img__titel {
     /* font-family: var(--font-family); */
