@@ -1,68 +1,242 @@
 .section-about-us {
     padding-top: 94px;
+
+    .about-us-list {
+        display: block;
+        // @media screen and (min-width: getBreakPoint('mobile')) {
+        //     max-width: getBreakPoint('mobile');
+        //     // width: 480px;
+        //     display: block;
+        //     width: 450px;
+        // }
+
+        @media screen and (min-width: getBreakPoint('tablet')) {
+            max-width: getBreakPoint('tablet');
+            display: inline-block;
+        }
+
+        @media screen and (min-width: getBreakPoint('desktop')) {
+            max-width: getBreakPoint('desktop');
+            // width: 480px;
+            display: flex;
+        }
+
+        &__item {
+            // margin-right: 30px;
+            // width: 270px;
+            display: block;
+
+            // width: 450px;
+            // margin-bottom: 30px;
+            @media screen and (min-width: getBreakPoint('mobile')) {
+                max-width: getBreakPoint('mobile');
+                width: 450px;
+                // margin-bottom: 30px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            @media screen and (min-width: getBreakPoint('tablet')) {
+                max-width: getBreakPoint('tablet');
+                width: 354px;
+                display: inline-block;
+                margin: 0 auto;
+            }
+
+            @media screen and (min-width: getBreakPoint('desktop')) {
+                max-width: getBreakPoint('desktop');
+                width: 270px;
+                // margin-right: 30px;
+            }
+        }
+
+        &__item:nth-child(1)::before {
+            @include flex_BGcen_no-r;
+            height: 120px;
+            background-image: url(../images/antenna.svg);
+            border-radius: 4px;
+            background-color: getColor('background');
+            content: '';
+        }
+
+        &__item:nth-child(2)::before {
+            @include flex_BGcen_no-r;
+            height: 120px;
+            background-image: url(../images/clock.svg);
+            border-radius: 4px;
+            background-color: getColor('background');
+            content: '';
+        }
+
+        &__item:nth-child(3)::before {
+            @include flex_BGcen_no-r;
+            height: 120px;
+            background-image: url(../images/diagram.svg);
+            border-radius: 4px;
+            background-color: getColor('background');
+            content: '';
+        }
+
+        &__item:nth-child(4)::before {
+            @include flex_BGcen_no-r;
+            height: 120px;
+            background-image: url(../images/astronaut.svg);
+            border-radius: 4px;
+            background-color: getColor('background');
+            content: '';
+        }
+
+        &__title {
+            // align-items: center;
+            text-align: center;
+            // font-family: getFont('font-family');
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-top: 30px;
+            color: getColor('brand');
+
+            @media screen and (min-width: getBreakPoint('tablet')) {
+                max-width: getBreakPoint('tablet');
+                display: flex;
+                // flex-wrap: wrap;
+            }
+
+            @media screen and (min-width: getBreakPoint('desktop')) {
+                max-width: getBreakPoint('desktop');
+                display: flex;
+            }
+        }
+
+        &__text {
+            // font-family: getFont('font-family');
+            margin-top: 10px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: getColor('color-gray');
+        }
+    }
 }
 
-.section-about-us-list {
-    display: flex;
-}
+// .section-about-us-list {
+//     display: block;
+//     // @media screen and (min-width: getBreakPoint('mobile')) {
+//     //     max-width: getBreakPoint('mobile');
+//     //     // width: 480px;
+//     //     display: block;
+//     //     width: 450px;
+//     // }
 
-.about-us-list__item {
-    margin-right: 30px;
-    width: 270px;
-}
+//     @media screen and (min-width: getBreakPoint('tablet')) {
+//         max-width: getBreakPoint('tablet');
+//         display: inline-block;
+//     }
 
-.about-us-list__item:nth-child(1)::before {
-    @include flex_BGcen_no-r;
-    height: 120px;
-    background-image: url(../images/antenna.svg);
-    border-radius: 4px;
-    background-color: getColor('background');
-    content: '';
-}
+//     @media screen and (min-width: getBreakPoint('desktop')) {
+//         max-width: getBreakPoint('desktop');
+//         // width: 480px;
+//         display: flex;
+//     }
 
-.about-us-list__item:nth-child(2)::before {
-    @include flex_BGcen_no-r;
-    height: 120px;
-    background-image: url(../images/clock.svg);
-    border-radius: 4px;
-    background-color: getColor('background');
-    content: '';
-}
+// }
 
-.about-us-list__item:nth-child(3)::before {
-    @include flex_BGcen_no-r;
-    height: 120px;
-    background-image: url(../images/diagram.svg);
-    border-radius: 4px;
-    background-color: getColor('background');
-    content: '';
-}
+// .about-us-list__item {
+//     // margin-right: 30px;
+//     // width: 270px;
+//     display: block;
 
-.about-us-list__item:nth-child(4)::before {
-    @include flex_BGcen_no-r;
-    height: 120px;
-    background-image: url(../images/astronaut.svg);
-    border-radius: 4px;
-    background-color: getColor('background');
-    content: '';
-}
+//     // width: 450px;
+//     // margin-bottom: 30px;
+//     @media screen and (min-width: getBreakPoint('mobile')) {
+//         max-width: getBreakPoint('mobile');
+//         width: 450px;
+//         // margin-bottom: 30px;
+//         display: block;
+//         margin: 0 auto;
+//     }
 
-.about-us-list__title {
-    // font-family: getFont('font-family');
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-top: 30px;
-    color: getColor('brand');
-}
+//     @media screen and (min-width: getBreakPoint('tablet')) {
+//         max-width: getBreakPoint('tablet');
+//         width: 354px;
+//         display: inline-block;
+//         margin: 0 auto;
+//     }
 
-.about-us-list__text {
-    // font-family: getFont('font-family');
-    margin-top: 10px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: getColor('color-gray');
-}
+//     @media screen and (min-width: getBreakPoint('desktop')) {
+//         max-width: getBreakPoint('desktop');
+//         width: 270px;
+//         // margin-right: 30px;
+//     }
+// }
+
+// .about-us-list__item:nth-child(1)::before {
+//     @include flex_BGcen_no-r;
+//     height: 120px;
+//     background-image: url(../images/antenna.svg);
+//     border-radius: 4px;
+//     background-color: getColor('background');
+//     content: '';
+// }
+
+// .about-us-list__item:nth-child(2)::before {
+//     @include flex_BGcen_no-r;
+//     height: 120px;
+//     background-image: url(../images/clock.svg);
+//     border-radius: 4px;
+//     background-color: getColor('background');
+//     content: '';
+// }
+
+// .about-us-list__item:nth-child(3)::before {
+//     @include flex_BGcen_no-r;
+//     height: 120px;
+//     background-image: url(../images/diagram.svg);
+//     border-radius: 4px;
+//     background-color: getColor('background');
+//     content: '';
+// }
+
+// .about-us-list__item:nth-child(4)::before {
+//     @include flex_BGcen_no-r;
+//     height: 120px;
+//     background-image: url(../images/astronaut.svg);
+//     border-radius: 4px;
+//     background-color: getColor('background');
+//     content: '';
+// }
+
+// .about-us-list__title {
+//     // align-items: center;
+//     text-align: center;
+//     // font-family: getFont('font-family');
+//     font-weight: 700;
+//     font-size: 14px;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     margin-top: 30px;
+//     color: getColor('brand');
+
+//     @media screen and (min-width: getBreakPoint('tablet')) {
+//         max-width: getBreakPoint('tablet');
+//         display: flex;
+//         // flex-wrap: wrap;
+//     }
+
+//     @media screen and (min-width: getBreakPoint('desktop')) {
+//         max-width: getBreakPoint('desktop');
+//         display: flex;
+//     }
+// }
+
+// .about-us-list__text {
+//     // font-family: getFont('font-family');
+//     margin-top: 10px;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: getColor('color-gray');
+// }

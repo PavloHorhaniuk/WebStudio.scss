@@ -1,30 +1,53 @@
 .section-customers {
     padding-top: 90px;
     padding-bottom: 94px;
+
+    .customers__title {
+        // font-family: getFont('font-family');
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: getColor('brand');
+        margin-bottom: 50px;
+    }
+
+    &-list {
+        display: flex;
+
+        .customers-list__item {
+            @include flex_JScenAIcen;
+            width: 170px;
+            height: 92px;
+            color: #AFB1B8;
+            border: 1px solid #AFB1B8;
+            border-radius: 5px;
+        }
+    }
 }
 
-.section-customers-list {
-    display: flex;
-}
+// .section-customers-list {
+//     display: flex;
+// }
 
-.customers__title {
-    // font-family: getFont('font-family');
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: getColor('brand');
-    margin-bottom: 50px;
-}
+// .customers__title {
+//     // font-family: getFont('font-family');
+//     font-weight: 700;
+//     font-size: 36px;
+//     letter-spacing: 0.03em;
+//     text-align: center;
+//     color: getColor('brand');
+//     margin-bottom: 50px;
+// }
 
-.customers-list__item {
-    @include flex_JScenAIcen;
-    width: 170px;
-    height: 92px;
-    color: #AFB1B8;
-    border: 1px solid #AFB1B8;
-    border-radius: 5px;
-}
+// .customers-list__item {
+//     @include flex_JScenAIcen;
+//     width: 170px;
+//     height: 92px;
+//     color: #AFB1B8;
+//     border: 1px solid #AFB1B8;
+//     border-radius: 5px;
+// }
 
 .customers-list__item:not(:last-child) {
     margin-right: 30px;

@@ -7,7 +7,7 @@
 .conteiner {
     width: 100%;
     min-width: 320px;
-    padding: 0 15px;
+    padding: 0px 15px 0px 15px;
     margin: 0 auto;
     outline:  solid 1px red;
 
@@ -27,14 +27,14 @@
     }
 }
 
-.flex-header{
-    height: 60px;
-    // @media screen and (min-width: getBreakPoint('tablet')) {
-    //     max-width: getBreakPoint('tablet');
+// .flex-header{
+//     height: 60px;
+//     // @media screen and (min-width: getBreakPoint('tablet')) {
+//     //     max-width: getBreakPoint('tablet');
 
-    //     height: 80px;
-    // }
-}
+//     //     height: 80px;
+//     // }
+// }
 
 //     @media screen and (min-width: getBreakPoints('mobile')) {
 //         max-width: getBreakPoints('mobile');

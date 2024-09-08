@@ -274,3 +274,45 @@
     color: var(--color-hover);
     fill: var(--color-hover);
 }
+.header {
+    @media screen and (min-width: getBreakPoint('mobile')) {
+        height: 60px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    .button-menu-toggle {
+        @media screen and (min-width: getBreakPoint('tablet')) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        @media screen and (min-width: getBreakPoint('mobile')) {
+            // margin-right: 276px;
+        }
+    }
+
+    .nav-list {
+        display: none;
+
+        @media screen and (min-width: getBreakPoint('tablet')) {
+            display: flex;
+        }
+
+        //* Від 1200px
+        @media screen and (min-width: getBreakPoint('desktop')) {}
+    }
+
+    .header-list {
+        display: none;
+
+        @media screen and (min-width: getBreakPoint('tablet')) {
+            display: flex;
+        }
+
+        // * Від 1200px
+        @media screen and (min-width: getBreakPoint('desktop')) {}
+    }
+}
