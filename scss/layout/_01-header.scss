@@ -1,4 +1,5 @@
 .flex-header {
+    // height: 60px;
     @media screen and (min-width: getBreakPoint('tablet')) {
         @include flex_AIcen;
     }
@@ -111,6 +112,7 @@
 
     &__nav {
         display: flex;
+        @include flex_AIcen;
         @media screen and (min-width: getBreakPoint('tablet')) {
             display: flex;
             // height: 80px;
